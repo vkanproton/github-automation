@@ -49,7 +49,7 @@ No modules.
 | <a name="input_repo_name"></a> [repo\_name](#input\_repo\_name) | Main variables | `string` | `""` | no |
 | <a name="input_squash_merge_commit_message"></a> [squash\_merge\_commit\_message](#input\_squash\_merge\_commit\_message) | n/a | `string` | `"COMMIT_MESSAGES"` | no |
 | <a name="input_squash_merge_commit_title"></a> [squash\_merge\_commit\_title](#input\_squash\_merge\_commit\_title) | n/a | `string` | `"COMMIT_OR_PR_TITLE"` | no |
-| <a name="input_token"></a> [token](#input\_token) | You must provide a token in order to authenticate againts `github.com` | `string` | `""` | no |
+| <a name="input_token"></a> [token](#input\_token) | You must provide a personal access token in order to authenticate againts `github.com` | `string` | `""` | no |
 | <a name="input_topics"></a> [topics](#input\_topics) | n/a | `list(string)` | `[]` | no |
 | <a name="input_visibility"></a> [visibility](#input\_visibility) | n/a | `string` | `"public"` | no |
 | <a name="input_vulnerability_alerts"></a> [vulnerability\_alerts](#input\_vulnerability\_alerts) | n/a | `bool` | `false` | no |

@@ -2,7 +2,7 @@
 variable token {
   type        = string
   default     = ""
-  description = "You must provide a token in order to authenticate againts `github.com`"
+  description = "You must provide a personal access token in order to authenticate againts `github.com`"
 }
 
 variable github_owner {
