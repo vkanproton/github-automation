@@ -1,13 +1,13 @@
 # Providers variables
-variable token {
+variable "token" {
   type        = string
   default     = ""
   description = "You must provide a personal access token in order to authenticate againts `github.com`"
 }
 
-variable github_owner {
-  type        = string
-  default     = ""
+variable "github_owner" {
+  type    = string
+  default = ""
 }
 
 # Main variables

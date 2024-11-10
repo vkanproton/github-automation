@@ -57,8 +57,4 @@ No modules.
 
 ## Outputs
 
-| Name | Description |
-|------|-------------|
-| <a name="output_github_repository_full_name"></a> [github\_repository\_full\_name](#output\_github\_repository\_full\_name) | n/a |
-| <a name="output_github_repository_id"></a> [github\_repository\_id](#output\_github\_repository\_id) | n/a |
-| <a name="output_github_repository_name"></a> [github\_repository\_name](#output\_github\_repository\_name) | Outputs |
+No outputs.

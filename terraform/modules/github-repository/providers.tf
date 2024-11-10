@@ -1,6 +1,6 @@
 # Providers
 provider "github" {
-  token    = var.token
+  token = var.token
 }
 
 terraform {
