@@ -1,6 +1,8 @@
+---
 # Description
 NBU project for VK (F-107833) - Terraform module for creating Github.com repositories
 
+---
 ## How-to
 1. Install `git` tool, if you don't have it already:
 - https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
@@ -27,3 +29,5 @@ NBU project for VK (F-107833) - Terraform module for creating Github.com reposit
 8. Codify your repositories and run apply:
 - `tofu init`
 - `tofu apply`
+
+---
