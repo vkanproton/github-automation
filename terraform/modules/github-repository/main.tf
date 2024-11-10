@@ -1,4 +1,4 @@
-# create repository
+# Create repository
 resource "github_repository" "this" {
   name                                    = var.repo_name
   description                             = "[managed-by-terraform] ${var.description}"

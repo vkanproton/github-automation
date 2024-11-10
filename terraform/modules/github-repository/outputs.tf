@@ -1,3 +1,4 @@
+# Outputs
 output "github_repository_name" {
   value = github_repository.this.name
 }
