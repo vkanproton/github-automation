@@ -26,7 +26,11 @@ NBU project for VK (F-107833) - Terraform module for creating Github.com reposit
 7. Move to the repository directory with the repositories` definitions:
 - `cd github-automation/terraform/repositories`
 
-8. Codify your repositories and run apply:
+8. Codify your repositories. See student examples here:
+- [student_001 repository](terraform/repositories/repo_student_001.tf)
+- [student_002 repository](terraform/repositories/repo_student_002.tf)
+
+9. Run apply to deploy the repositories
 - `tofu init`
 - `tofu apply`
 
