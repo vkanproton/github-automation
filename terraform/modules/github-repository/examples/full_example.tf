@@ -1,6 +1,6 @@
 module "test-repo-full" {
   source       = "../modules/github-repository"
-  github_owner = "vkanproton"
+  github_owner = "owner_user"
 
   repo_name                               = "test-repo-name_full"
   description                             = "Description for a repo"
@@ -30,4 +30,8 @@ module "test-repo-full" {
   vulnerability_alerts                    = false
   ignore_vulnerability_alerts_during_read = true
   topics                                  = ["test-topic"]
+
+  user_access = ["userOne", "userTwo"]
+
+  protected_branches = ["production"]
 }
