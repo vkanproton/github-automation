@@ -1,23 +1,23 @@
 ---
-# Description
-NBU project for VK (F-107833) - Terraform module for creating Github.com repositories
+## Description
+NBU project for VK (F-107833) - Terraform module for creating github.com repositories, assigning access and protecting branches.
 
 ---
 ## How-to
-1. Install `git` tool, if you don't have it already:
+1. Install `git`, if you don't have it already:
 - https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 
-2. Install free Terraform:
+2. Install free `terraform`, if you don't have it already:
 - https://opentofu.org/docs/intro/install/
 
-3. Create an account in Github.com, if you don't have one:
+3. Create an account in github.com, if you don't have one already:
 - if you don't have an account -> Click `Sign up` button
 - if you have an account already -> Click `Sign in` button
 
-4. Create a token in Github.com, if you don't have one:
+4. Create a token in github.com, if you don't have one already:
 - `Settings` -> `Developer Settings` -> `Personal access tokens` -> `Tokens (classic)` -> Click `Generate new token` button -> Click `Generate new token (classic) option`
 
-5. Export token in your terminal to authenticate terraform agains Github.com:
+5. Export token in your terminal to authenticate terraform agains github.com:
 - `export GITHUB_TOKEN="PUT_TOKEN_HERE"`
 
 6. Checkout terraform repository locally:
