@@ -18,7 +18,9 @@ No modules.
 
 | Name | Type |
 |------|------|
+| [github_branch_protection.this](https://registry.terraform.io/providers/integrations/github/latest/docs/resources/branch_protection) | resource |
 | [github_repository.this](https://registry.terraform.io/providers/integrations/github/latest/docs/resources/repository) | resource |
+| [github_repository_collaborator.this](https://registry.terraform.io/providers/integrations/github/latest/docs/resources/repository_collaborator) | resource |
 
 ## Inputs
 
@@ -46,11 +48,13 @@ No modules.
 | <a name="input_license_template"></a> [license\_template](#input\_license\_template) | n/a | `string` | `null` | no |
 | <a name="input_merge_commit_message"></a> [merge\_commit\_message](#input\_merge\_commit\_message) | n/a | `string` | `"PR_TITLE"` | no |
 | <a name="input_merge_commit_title"></a> [merge\_commit\_title](#input\_merge\_commit\_title) | n/a | `string` | `"MERGE_MESSAGE"` | no |
-| <a name="input_repo_name"></a> [repo\_name](#input\_repo\_name) | Main variables | `string` | `""` | no |
+| <a name="input_protected_branches"></a> [protected\_branches](#input\_protected\_branches) | github\_branch\_protection | `list(string)` | `[]` | no |
+| <a name="input_repo_name"></a> [repo\_name](#input\_repo\_name) | # Main variables github\_repository | `string` | `""` | no |
 | <a name="input_squash_merge_commit_message"></a> [squash\_merge\_commit\_message](#input\_squash\_merge\_commit\_message) | n/a | `string` | `"COMMIT_MESSAGES"` | no |
 | <a name="input_squash_merge_commit_title"></a> [squash\_merge\_commit\_title](#input\_squash\_merge\_commit\_title) | n/a | `string` | `"COMMIT_OR_PR_TITLE"` | no |
 | <a name="input_token"></a> [token](#input\_token) | You must provide a personal access token in order to authenticate againts `github.com` | `string` | `""` | no |
 | <a name="input_topics"></a> [topics](#input\_topics) | n/a | `list(string)` | `[]` | no |
+| <a name="input_user_access"></a> [user\_access](#input\_user\_access) | github\_repository\_collaborator | `list(string)` | `[]` | no |
 | <a name="input_visibility"></a> [visibility](#input\_visibility) | n/a | `string` | `"public"` | no |
 | <a name="input_vulnerability_alerts"></a> [vulnerability\_alerts](#input\_vulnerability\_alerts) | n/a | `bool` | `false` | no |
 | <a name="input_web_commit_signoff_required"></a> [web\_commit\_signoff\_required](#input\_web\_commit\_signoff\_required) | n/a | `bool` | `false` | no |

@@ -1,4 +1,4 @@
-# Providers variables
+## Providers variables
 variable "token" {
   type        = string
   default     = ""
@@ -10,7 +10,8 @@ variable "github_owner" {
   default = ""
 }
 
-# Main variables
+## Main variables
+# github_repository
 variable "repo_name" {
   type    = string
   default = ""
@@ -146,6 +147,18 @@ variable "ignore_vulnerability_alerts_during_read" {
 }
 
 variable "topics" {
+  type    = list(string)
+  default = []
+}
+
+# github_repository_collaborator
+variable "user_access" {
+  type    = list(string)
+  default = []
+}
+
+# github_branch_protection
+variable "protected_branches" {
   type    = list(string)
   default = []
 }

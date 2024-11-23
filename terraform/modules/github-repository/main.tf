@@ -1,7 +1,7 @@
 # Create repository
 resource "github_repository" "this" {
   name                                    = var.repo_name
-  description                             = "[managed-by-terraform] ${var.description}"
+  description                             = "[terraform] ${var.description}"
   visibility                              = var.visibility
   auto_init                               = var.auto_init
   has_issues                              = var.has_issues
@@ -27,5 +27,21 @@ resource "github_repository" "this" {
   allow_update_branch                     = var.allow_update_branch
   vulnerability_alerts                    = var.vulnerability_alerts
   ignore_vulnerability_alerts_during_read = var.ignore_vulnerability_alerts_during_read
-  topics                                  = concat(var.topics, ["managed-by-terraform"])
+  topics                                  = concat(var.topics, ["terraform"])
+}
+
+# Assign access to users
+resource "github_repository_collaborator" "this" {
+  for_each = var.user_access != [] ? toset(var.user_access) : []
+
+  repository = github_repository.this.name
+  username   = each.value
+}
+
+# Configure branch protection
+resource "github_branch_protection" "this" {
+  for_each = var.protected_branches != [] ? toset(var.protected_branches) : []
+
+  repository_id = github_repository.this.id
+  pattern       = each.value
 }
