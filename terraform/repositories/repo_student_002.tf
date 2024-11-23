@@ -4,4 +4,8 @@ module "repo_student_002" {
 
   repo_name   = "repo_student_002"
   description = "Repo for student 002"
+
+  user_access = ["stevemoser", "lamont"]
+
+  protected_branches = ["staging"]
 }
