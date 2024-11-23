@@ -29,7 +29,7 @@ NBU project for VK (F-107833) - Terraform module for creating github.com reposit
 8. Codify your repositories. See student examples here:
 - [student_001 repository](terraform/repositories/repo_student_001.tf)
 - [student_002 repository](terraform/repositories/repo_student_002.tf)
-- [full module example](terraform/modules/examples/full_example.tf)
+- [full module example](terraform/modules/github-repository/examples/full_example.tf)
 
 
 9. Run apply to deploy the repositories
